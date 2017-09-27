@@ -2,6 +2,7 @@ package Main;
 import Solutions.*;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 import BasicUtils.*;
 
@@ -9,6 +10,21 @@ public class Test {
 
 	public static void main(String[] args) {
 		
+		
+		int nums1[] = {1,2};
+		int nums2[] = {1,2,3,4};
+		MedianOfTwoSortedArrays mtsa = new MedianOfTwoSortedArrays();
+		System.out.println(mtsa.findMedianSortedArrays(nums1, nums2));
+		
+		int a1[] = {1};
+		System.out.println(a1.length);
+		int a2[] = Arrays.copyOfRange(a1, 1, 1);
+		System.out.println(a2.length);
+		for(int i = 0; i < a2.length; i++) {
+			System.out.print(a2[i]);
+			System.out.print(",");
+		}
+		System.out.println();
 		LongestSubstringWithoutRepeatingCharacters lswrc = new LongestSubstringWithoutRepeatingCharacters();
 		int maxLen = lswrc.lengthOfLongestSubstring("aaaaaa");
 		System.out.println(maxLen);
