@@ -9,8 +9,11 @@ import BasicUtils.*;
 public class Test {
 
 	public static void main(String[] args) {
+		LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
+		String s1 = "abcbaabcba";
 		
-		
+		String s3 = lps.longestPalindrome(s1);
+		System.out.println(s3);
 		int nums1[] = {1,2};
 		int nums2[] = {1,2,3,4};
 		MedianOfTwoSortedArrays mtsa = new MedianOfTwoSortedArrays();
