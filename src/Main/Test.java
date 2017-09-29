@@ -9,6 +9,9 @@ import BasicUtils.*;
 public class Test {
 
 	public static void main(String[] args) {
+		
+		ReverseInteger ri = new ReverseInteger();
+		System.out.println(ri.reverse(-123456));
 		LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
 		String s1 = "abcbaabcba";
 		
