@@ -9,7 +9,11 @@ import BasicUtils.*;
 public class Test {
 
 	public static void main(String[] args) {
-		
+		String ss = "2147483648";
+		int in = -2147483648;
+		System.out.println(in>=0);
+		Ascii2Integer atoi = new Ascii2Integer();
+		System.out.println(atoi.myAtoi(ss));
 		ReverseInteger ri = new ReverseInteger();
 		System.out.println(ri.reverse(-123456));
 		LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
