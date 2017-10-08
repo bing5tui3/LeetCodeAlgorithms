@@ -9,9 +9,12 @@ import BasicUtils.*;
 public class Test {
 
 	public static void main(String[] args) {
+		int height[] = {1,2,3,4};
+		ContainerWithMostWater cwmw = new ContainerWithMostWater();
+		System.out.println(cwmw.maxArea(height));
 		String ss = "2147483648";
 		int in = -2147483648;
-		System.out.println(in>=0);
+		System.out.println(in);
 		Ascii2Integer atoi = new Ascii2Integer();
 		System.out.println(atoi.myAtoi(ss));
 		ReverseInteger ri = new ReverseInteger();
