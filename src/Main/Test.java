@@ -3,41 +3,50 @@ import Solutions.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.List;
 
 import BasicUtils.*;
 
 public class Test {
 
 	public static void main(String[] args) {
-		
-		ResizingArrayQueueOfStrings raqs = new ResizingArrayQueueOfStrings();
-		raqs.push("11111");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.push("22222");
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		raqs.pop();
-		System.out.println(raqs.size());
-		System.out.println(raqs.arraySize());
-		for (String s: raqs) {
-			System.out.println(s);
+		int[] nums = {-1,0,1,2,-1,-4};
+		ThreeSum ts = new ThreeSum();
+		List<List<Integer>> listSet = ts.threeSum(nums);
+		for(List<Integer> li: listSet) {
+			for(Integer i: li) {
+				System.out.println(i);
+			}
 		}
+		
+//		ResizingArrayQueueOfStrings raqs = new ResizingArrayQueueOfStrings();
+//		raqs.push("11111");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.push("22222");
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		raqs.pop();
+//		System.out.println(raqs.size());
+//		System.out.println(raqs.arraySize());
+//		for (String s: raqs) {
+//			System.out.println(s);
+//		}
 		
 //		int height[] = {1,2,3,4};
 //		ContainerWithMostWater cwmw = new ContainerWithMostWater();
