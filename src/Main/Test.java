@@ -10,14 +10,38 @@ import BasicUtils.*;
 public class Test {
 
 	public static void main(String[] args) {
-		int[] nums = {-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6};
-		ThreeSum ts = new ThreeSum();
-		Arrays.sort(nums);
-		for(int i: nums) {
-			System.out.println(i);
+		
+		ListNode l11 = new ListNode(1);
+		ListNode l12 = new ListNode(4);
+		ListNode l13 = new ListNode(5);
+		l11.next = l12;
+		l12.next = l13;
+		
+		ListNode l21 = new ListNode(4);
+		ListNode l22 = new ListNode(5);
+		ListNode l23 = new ListNode(6);
+		l21.next = l22;
+		l22.next = l23;
+		
+		ListNode[] lists = {l11, l21};
+		
+		MakeKSortedList mSL = new MakeKSortedList();
+		ListNode listHead = mSL.mergeKLists(lists);
+		
+		while (listHead != null) {
+			System.out.println(listHead.val);
+			listHead = listHead.next;
 		}
 		
-		System.out.println("result:" + ts.binarySearch(nums, 4, 3));
+		
+//		int[] nums = {-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6};
+//		ThreeSum ts = new ThreeSum();
+//		Arrays.sort(nums);
+//		for(int i: nums) {
+//			System.out.println(i);
+//		}
+//		
+//		System.out.println("result:" + ts.binarySearch(nums, 4, 3));
 //		List<List<Integer>> listSet = ts.threeSum(nums);
 //		for(List<Integer> li: listSet) {
 //			for(Integer i: li) {
